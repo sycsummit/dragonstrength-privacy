@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DragonStrength — Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red:     #c0392b;
+      --red-dk:  #922b21;
+      --cream:   #f5f0e8;
+      --ink:     #1a1a1a;
+      --muted:   #6b6b6b;
+      --rule:    #d9d0c0;
+      --accent:  #e8dfd0;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--ink);
+      color: var(--cream);
+      padding: 56px 48px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: 'DS';
+      position: absolute;
+      right: -20px;
+      top: -30px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 220px;
+      color: rgba(255,255,255,0.04);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(48px, 8vw, 80px);
+      letter-spacing: 0.02em;
+      line-height: 1;
+      color: var(--cream);
+    }
+
+    .tagline {
+      margin-top: 16px;
+      font-size: 15px;
+      color: rgba(245,240,232,0.45);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 32px 96px;
+    }
+
+    .intro {
+      border-left: 3px solid var(--red);
+      padding-left: 24px;
+      margin-bottom: 56px;
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    section {
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    h2 .num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      color: var(--red);
+      background: rgba(192,57,43,0.08);
+      padding: 3px 8px;
+      border-radius: 2px;
+    }
+
+    p {
+      font-size: 15.5px;
+      color: #333;
+      margin-bottom: 14px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+
+    ul li {
+      font-size: 15.5px;
+      color: #333;
+      padding: 10px 0 10px 24px;
+      position: relative;
+      border-bottom: 1px solid var(--accent);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--red);
+      font-weight: 500;
+    }
+
+    strong { font-weight: 500; color: var(--ink); }
+
+    a {
+      color: var(--red-dk);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(192,57,43,0.3);
+      transition: border-color 0.2s;
+    }
+
+    a:hover { border-color: var(--red); }
+
+    .callout {
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: 4px;
+      padding: 24px 28px;
+      margin: 24px 0;
+    }
+
+    .callout p {
+      color: rgba(245,240,232,0.8);
+      font-size: 14.5px;
+      margin: 0;
+    }
+
+    .callout strong { color: var(--cream); }
+
+    .nav-link {
+      display: inline-block;
+      margin-top: 48px;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: none;
+    }
+
+    .nav-link:hover { color: var(--red); }
+
+    footer {
+      background: var(--ink);
+      color: rgba(245,240,232,0.35);
+      text-align: center;
+      padding: 32px;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    footer span { color: var(--red); }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Support</p>
+  <h1>DragonStrength</h1>
+  <p class="tagline">We're here to help.</p>
+</header>
+
+<main>
+
+  <p class="intro">
+    Have a question, found a bug, or want to suggest a feature? Here's how to get in touch.
+  </p>
+
+  <section>
+    <h2><span class="num">01</span> Report a Bug or Request a Feature</h2>
+    <p>The best way to report an issue or suggest an improvement is to send an email with as much detail as possible:</p>
+    <ul>
+      <li>What you were doing when the issue occurred</li>
+      <li>What you expected to happen vs. what actually happened</li>
+      <li>Your iOS version and device model</li>
+    </ul>
+    <div class="callout">
+      <p><strong>Contact:</strong> Send support requests to <a href="mailto:support@sycsummit.com" style="color: rgba(245,240,232,0.7); border-color: rgba(245,240,232,0.2);">support@sycsummit.com</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> Frequently Asked Questions</h2>
+
+    <p><strong>My workout data disappeared after updating the app.</strong><br>
+    Your data is stored locally on your device and should persist across updates. If you have iCloud enabled, check that DragonStrength has iCloud access in Settings → [Your Name] → iCloud.</p>
+
+    <p><strong>How do I back up my data?</strong><br>
+    Go to the Profile Manager and tap <em>Export All Data</em>. This saves a JSON file containing all your exercises and workout history that you can store anywhere you like.</p>
+
+    <p><strong>Can I use DragonStrength on multiple devices?</strong><br>
+    Yes — if you're signed into the same iCloud account on both devices, your data will sync automatically via CloudKit.</p>
+
+    <p><strong>How do I delete all my data?</strong><br>
+    Delete the app from your device. All locally stored data will be removed. To also remove iCloud data, go to Settings → [Your Name] → iCloud → Manage Account Storage and remove DragonStrength.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Privacy</h2>
+    <p>DragonStrength does not collect any personal data. Your workout information stays on your device and your iCloud account. Read our full <a href="./index.html">Privacy Policy</a>.</p>
+  </section>
+
+  <a class="nav-link" href="./index.html">← Privacy Policy</a>
+
+</main>
+
+<footer>
+  &copy; <span id="yr"></span> DragonStrength &nbsp;<span>·</span>&nbsp; All rights reserved
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</footer>
+
+</body>
+</html>
